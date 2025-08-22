@@ -3,14 +3,14 @@ class Produto:
         self.__preco = preco = 45
         self.set__idade =(preco)
         
-    def get__preco(self):
-        return self.__preco
-        
     def set__preco(self, novo__preco):
         if isinstance(novo__preco, int) and novo__preco > 0:
             self.__preco = novo__preco
         else:
             print("Erro: preço:" , {novo__preco} , "Inválido. o valor do preço deve ser positivo.")
+            
+    def get__preco(self):
+        return self.__preco
     
 a = Produto(45)
 print(a.get__preco())
